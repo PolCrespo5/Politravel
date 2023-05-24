@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="btnFloatingMaps" parent="Theme.Politravel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_gravity">bottom|right</item>
+        <item name="fabSize">mini</item>
+    </style>
+    <style name="btnAddModifyStyle" parent="Theme.Politravel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="recycleViewsStyle" parent="Theme.Politravel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+    <style name="floatingButtonStyle" parent="Theme.Politravel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="backgroundTint">#D9DDDC</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+    <style name="radioButtonTrasnportStyle" parent="Theme.Politravel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+    <style name="txtDestinationStyle" parent="Theme.Politravel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="txtDestinationDetailStyle" parent="Theme.Politravel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="btnNumDaysPickStyle" parent="Theme.Politravel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="txtInputLayoutNameStyle" parent="Theme.Politravel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+</resources>

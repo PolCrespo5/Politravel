@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/LayPantallaDetall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PantallaDonarAlta"
+        android:orientation="vertical">
+        <!--Img + Nom + Transport-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+            <!--Imatge-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <!--Imatge Paquet-->
+                <ImageButton
+                    android:id="@+id/ImgPaquetAdd"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/border"
+                    android:src="@drawable/addimage"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+            <!--Nom + Transport-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!--Transport Paquet-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/EtNamePaquet"
+                    style="@style/txtInputLayoutNameStyle"
+                    android:layout_marginHorizontal="10dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    android:hint="@string/hintNameTravel">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:maxLength="15"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <RadioGroup
+                            android:id="@+id/radioGroupTransport"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                style="@style/radioButtonTrasnportStyle"
+                                android:button="@drawable/airplane"/>
+                            <RadioButton
+                                style="@style/radioButtonTrasnportStyle"
+                                android:button="@drawable/boat"/>
+                            <RadioButton
+                                style="@style/radioButtonTrasnportStyle"
+                                android:button="@drawable/bus"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--Destí Inicial i Final + Num dies-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/numPickerDaysAdding"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+                    <Button
+                        android:id="@+id/Btn_less"
+                        style="@style/btnNumDaysPickStyle"
+                        android:layout_weight="0.5"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/LblCountDies"
+                        style="@style/btnNumDaysPickStyle"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1"/>
+
+                    <Button
+                        android:id="@+id/Btn_more"
+                        style="@style/btnNumDaysPickStyle"
+                        android:layout_weight="0.5"
+                        android:text="+" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/LblLlocInicial"
+                    style="@style/txtDestinationStyle"
+                    android:layout_weight="1"/>
+                <TextView
+                    style="@style/txtDestinationStyle"
+                    android:layout_weight="0.25"
+                    android:text="-->"/>
+                <TextView
+                    android:id="@+id/LblLlocFinal"
+                    style="@style/txtDestinationStyle"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--Itinerari Recorregut-->
+        <TextView
+            android:id="@+id/PopUpWindowItinerariAlta"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/lblRoute">
+        </TextView>
+        <!--Maps-->
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_margin="10dp">
+            <fragment
+                android:id="@+id/mapDonarAlta"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_marker_fab"
+                style="@style/btnFloatingMaps"
+                android:layout_marginRight="50dp"
+                app:srcCompat="@drawable/add"
+                android:contentDescription="Añade tu marcador"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/delete_marker_fab"
+                style="@style/btnFloatingMaps"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/delete"
+                android:contentDescription="Elimine el marcador"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <Button
+            android:id="@+id/BtnAddPaquet"
+            style="@style/btnAddModifyStyle"
+            android:text="@string/btnAddTravel"/>
+    </LinearLayout>
+</LinearLayout>

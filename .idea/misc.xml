@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/drawable/airplane.xml" value="0.121" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/drawable/border.xml" value="0.255" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/drawable/border_error.xml" value="0.1775" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/drawable/bus.xml" value="0.1915" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/layout/activity_splash_screen.xml" value="0.3640625" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/layout/llista_imatges.xml" value="0.378125" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/layout/llista_itinerari_recorregut.xml" value="0.378125" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/layout/llista_viatges.xml" value="0.378125" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/layout/pantalla_detall.xml" value="0.378125" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/layout/pantalla_donar_alta.xml" value="0.378125" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/layout/pantalla_imatges.xml" value="0.378125" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/layout/pantalla_llistat.xml" value="0.378125" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/layout/pantalla_modificacio_eliminar.xml" value="0.378125" />
+        <entry key="..\:/DAM2/M08 Progra Multimedia Apps/Politravel/app/src/main/res/layout/popup_window_itinerari.xml" value="0.378125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

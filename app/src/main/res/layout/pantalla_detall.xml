@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LayPantallaDetall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--Img + Nom + Transport-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <!--Imatge-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <!--Imatge Paquet-->
+            <ImageView
+                android:id="@+id/ImgPaquet"
+                android:layout_width="150dip"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+        <!--Nom + Transport-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--Nom Paquet-->
+            <TextView
+                android:id="@+id/LblNomPaquet"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <!--Transport Paquet-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/LblMitjaTransport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:text="@string/lblTransport"
+                    android:textSize="10sp" />
+                <ImageView
+                    android:id="@+id/ImgTransport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--Destí Inicial i Final + Num dies-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/LblNumDies"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/numPickerDays"
+            android:textSize="10sp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/LblLlocInicial"
+                style="@style/txtDestinationDetailStyle"
+                android:layout_weight="1"
+                android:text="@string/lblOrigin"/>
+            <TextView
+                style="@style/txtDestinationStyle"
+                android:layout_weight="0.2"
+                android:text="-->"/>
+            <TextView
+                android:id="@+id/LblLlocFinal"
+                style="@style/txtDestinationDetailStyle"
+                android:layout_weight="1"
+                android:text="@string/lblDestination"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--Itinerari Recorregut-->
+    <TextView
+        android:id="@+id/PopUpWindowItinerari"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/lblRoute"
+        android:textSize="20sp"
+        android:gravity="center">
+
+    </TextView>
+    <!--Maps-->
+    <fragment
+        android:id="@+id/mapDetail"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_margin="10dp"/>
+</LinearLayout>

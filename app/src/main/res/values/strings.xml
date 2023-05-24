@@ -1,0 +1,18 @@
+<resources>
+    /*GENERAL*/
+    <string name="app_name">Politravel</string>
+
+    /*LIST*/
+    <string name="lblNumDays">Duration (Days)\t\t</string>
+
+    /*DETAIL/ADD/MODIFY*/
+    <string name="lblTransport">TRANSPORT</string>
+    <string name="numPickerDays">DURATION (Days)</string>
+    <string name="numPickerDaysAdding">SELECT DAYS</string>
+    <string name="lblOrigin">ORIGIN</string>
+    <string name="lblDestination">DESTINY</string>
+    <string name="lblRoute">SEE ROUTE</string>
+    <string name="hintNameTravel">Name</string>
+    <string name="btnAddTravel">ADD TRAVEL</string>
+
+</resources>
